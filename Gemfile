@@ -1,19 +1,16 @@
 source 'https://rubygems.org'
 
 gem 'omnibus-software', git: 'https://github.com/chef/omnibus-software'
-gem 'omnibus', '<5.5.0'
+gem 'omnibus'
 gem 'mixlib-log'
-gem 'mixlib-shellout', '>=1.6.1'
+gem 'mixlib-shellout'
 gem 'rake'
 gem 'pry'
 gem 'cinch'
 gem 'chronic_duration'
 gem 'json'
 gem 'packagecloud-ruby'
-gem 'net-ssh', '<3.0.0'
-gem 'rack', '<2.0'
-gem 'ffi-yajl', '<2.3'
-gem 'ohai', '<8.18.0'
+gem 'net-ssh'
 
 group :development, :test do
   gem 'rspec'
