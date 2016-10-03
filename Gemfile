@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'omnibus-software', :github => 'ali-graham/omnibus-software', :branch => 'master'
-gem 'omnibus', :github => 'SarahKowalik/omnibus', :branch => 'master'
+gem 'omnibus-software', git: 'https://github.com/chef/omnibus-software'
+gem 'omnibus'
 gem 'mixlib-log'
 gem 'mixlib-shellout', '>=1.6.1'
 gem 'rake'
@@ -11,6 +11,7 @@ gem 'chronic_duration'
 gem 'json'
 gem 'packagecloud-ruby'
 gem 'net-ssh', '<3.0.0'
+gem 'rack', '<2.0'
 
 group :development, :test do
   gem 'rspec'
