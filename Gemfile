@@ -12,6 +12,7 @@ gem 'json'
 gem 'packagecloud-ruby'
 gem 'net-ssh', '<3.0.0'
 gem 'rack', '<2.0'
+gem 'ffi-yajl', '<2.3'
 
 group :development, :test do
   gem 'rspec'
