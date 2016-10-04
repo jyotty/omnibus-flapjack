@@ -120,7 +120,7 @@ task :build do
     '-e', "DISTRO_RELEASE=#{pkg.distro_release}",
     '-e', "OFFICIAL_FLAPJACK_PACKAGE=#{official_pkg}",
     "-v", "#{Dir.home}/.gnupg:/root/.gnupg",
-    "flapjack/omnibus-#{pkg.distro}:#{pkg.distro_release}", 'bash', '-l', '-c',
+    "omnibus_flapjack:dockerfile", 'bash', '-l', '-c',
     "\'#{omnibus_cmd}\'"
   ].join(" ")
   puts "Executing: " + docker_cmd_string
