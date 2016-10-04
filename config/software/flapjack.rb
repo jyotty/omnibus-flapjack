@@ -30,7 +30,7 @@ build do
           "git pull && " \
           "git checkout #{build_ref} && " \
           "/opt/flapjack/embedded/bin/gem build flapjack.gemspec"
-  command "/opt/flapjack/embedded/bin/gem install " \
+  command "shopt -s nullglob && /opt/flapjack/embedded/bin/gem install " \
         "/var/cache/omnibus/src/flapjack/flapjack_source/flapjack*gem " \
         "--bindir #{install_dir}/bin --no-rdoc --no-ri" 
 
