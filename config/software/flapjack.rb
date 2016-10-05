@@ -42,7 +42,7 @@ build do
     command "export gem_home=\"`/opt/flapjack/embedded/bin/gem environment gemdir`\" ; " \
             "echo \"gem_home: ${gem_home}\" ; " \
             "export installed_gem=\"`ls -dtr ${gem_home}/gems/flapjack* | tail -1`\" ; " \
-            "export GOPATH=/usr/local/go ; " \
+            "export GOPATH=/usr/local/go SKIPTESTS=1 ; " \
             "cd ${installed_gem} && " \
             "./build.sh"
   end
