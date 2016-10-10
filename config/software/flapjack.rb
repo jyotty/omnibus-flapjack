@@ -62,4 +62,5 @@ build do
 
   command "cp -R #{omnibus_flapjack_path}/dist/etc/init.d/v1 #{etc_path}/init.d/v1"
   command "cp -R #{omnibus_flapjack_path}/dist/etc/init.d/v2 #{etc_path}/init.d/v2"
+  command "rm -r /opt/flapjack/embedded/lib/ruby/gems/2.3.0/gems/flapjack-1.6.0/src"
 end
