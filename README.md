@@ -1,3 +1,12 @@
+## Blue Box Cloud usage notes
+
+This uses a locally-built docker image with the included Dockerfile. Build the image with `docker build -t "omnibus_flapjack:dockerfile" .`
+
+### Todo
+
+1. Figure out where the cloned `src/` directory is coming from in the embedded gem install of flapjack--the submodule inside causes the `git add -A -f` step of omnibus packaging to fail.
+2. Parameterize repo URL, ruby version, &c.
+
 # Flapjack Omnibus project
 
 This project creates full-stack platform-specific packages for
